@@ -25,7 +25,7 @@ jobs:
             #       cache: 'npm'
             # - run: npm i
             # - run: npm run build --if-present
-            - run: docker build -t create-react-app:nginx -f Dockerfile .
-            - run: docker rm -f create-react-app 2> /dev/null
-            - run: docker run -p 3001:80 -d --name create-react-app create-react-app:nginx
-            - run: docker network connect nginxproxymanager_default create-react-app
+            - run: docker build -t frontend:nginx -f Dockerfile .
+            - run: docker rm -f com-nurtenayla 2> /dev/null
+            - run: docker run -p 3001:80 -d --name com-nurtenayla frontend:nginx
+            - run: docker network connect nginxproxymanager_default com-nurtenayla
