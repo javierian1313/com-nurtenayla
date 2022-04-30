@@ -1,15 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import catBirthday from './catbirthday2.jpeg';
 
 function App() {
     return (
         <div className='App'>
             <header className='App-header'>
-                <img src={logo} className='App-logo' alt='logo' />
-                <p>{`<3 From BBB, i <3 uuuuuuu BBP <3`}</p>
-                <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-                    Learn React
-                </a>
+                <img src={catBirthday} alt='cat birthday' />
+                <p>{`<3 From BBB, i luvv uuuuuuu BBP <3`}</p>
             </header>
         </div>
     );
